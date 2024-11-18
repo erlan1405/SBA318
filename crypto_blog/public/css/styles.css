@@ -1,0 +1,104 @@
+/* Styles for navigation menu */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Styles for HOME */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.cryptos {
+    padding: 20px;
+}
+
+.cryptos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cryptos li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Styles for NEWS */
+.news ul {
+    list-style: none;
+    padding: 0;
+}
+
+.news li {
+    background-color: #fff;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news h2 a {
+    font-size: 1.0em;
+    color: #333;
+    text-decoration: none;
+}
+
+.news p {
+    color: #555;
+    font-size: 1em;
+}
+
+.news small {
+    color: #777;
+    font-size: 0.8em;
+}

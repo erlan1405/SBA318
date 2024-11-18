@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Blog</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('./nav.ejs') %>
+    <header>
+        <h1>Cryptocurrencies: Real-time rates</h1>
+    </header>
+    <main>
+        <section class="cryptos">
+            <ul>
+                <% coins.forEach(coin => { %>
+                    <li>
+                        <h2><%= coin.name %> (<%= coin.symbol.toUpperCase() %>)</h2>
+                        <p>Price: $<%= coin.current_price %></p>
+                        <p>24h changes: <%= coin.price_change_percentage_24h %>%</p>
+                    </li>
+                <% }) %>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Crypto Blog</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrencies News</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('./nav.ejs') %>
+    <header>
+        <h1>Latest news</h1>
+    </header>
+    <main>
+        <section class="news">
+            <% if (newsArticles.length > 0) { %>
+                <ul>
+                    <% newsArticles.forEach(article => { %>
+                        <li>
+                            <h2><a href="<%= article.url %>" target="_blank"><%= article.title %></a></h2>
+                            <p><%= article.description %></p>
+                            <p><small>Source: <%= article.source.name %> | <%= new Date(article.publishedAt).toLocaleString() %></small></p>
+                        </li>
+                    <% }) %>
+                </ul>
+            <% } else { %>
+                <p>No news found.</p>
+            <% } %>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Crypto Blog</p>
+    </footer>
+</body>
+</html>
