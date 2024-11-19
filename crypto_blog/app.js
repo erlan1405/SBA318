@@ -30,7 +30,7 @@ app.get('/', async (req, res) => {
 });
 
 
-// Webpage with news
+// Route for the news page
 app.get('/news', async (req, res) => {
     try {
         // Example with NewsAPI to get crypto news
@@ -49,6 +49,16 @@ app.get('/news', async (req, res) => {
         console.error(error);
         res.status(500).send('Error retrieving news');
     }
+});
+
+// Route for the contact page
+app.get('/contact', (req, res) => {
+    res.render('contact');
+});
+
+// Route for the about page
+app.get('/about', (req, res) => {
+    res.render('about');
 });
 
 // Run server 
